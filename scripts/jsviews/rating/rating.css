@@ -1,0 +1,86 @@
+/*--------------Rating tag-----------------*/
+.rating-category .stars{
+    min-width: 130px;
+	margin-bottom: 3px;
+}
+.rating-category:not(.readonly)  .stars .star-item{
+    cursor: pointer;
+}
+
+.rating-category .star-item {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.rating-category .votes{
+    margin-left: 5px;
+}
+.rating-category .votes i{
+    margin-left: 5px;
+}
+
+.rating-category .stars i{
+    font-size: 25px;
+}
+
+
+.rating-category  .star-off{
+    background-image: url("../../../img/raty/star-off-big.png");
+}
+.rating-category  .star-on{
+    background-image: url("../../../img/raty/star-on-big.png");
+}
+
+.rating-category .hover-off{
+    background-image: url("../../../img/raty/star-off-big.png")!important;
+}
+
+.rating-category  .hover-on{
+    background-image: url("../../../img/raty/star-on-big.png")!important;
+}
+.rating-category .stars i.hover-on:before{
+	content: "\f005"!important;
+	color: #F9BF3B!important;
+}
+
+.rating-category .stars i.hover-off:before{
+	content: "\f006"!important;
+	color: #666!important;
+}
+
+.rating-category .stars i.star-on{
+	color: #F9BF3B;
+}
+
+.rating-category .tooltip-tag-tooltip-content span{
+	color: #F7A822;
+	display: inline-block;
+	vertical-align: middle;
+}
+.rating-category .tooltip-tag-tooltip-content .star-item{
+	width: 15px;
+	height: 15px;
+}
+.rating-category .tooltip-tag-tooltip-content .avatar-bg{
+	background-size:cover;
+	background-position:50% 50%;
+	border-radius: 50%;
+	position: relative;
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.rating-category .tooltip-tag-tooltip-content .rating-by-user-item{
+	padding: 5px 0;
+}
+.rating-category .tooltip-tag-tooltip-content .rating-by-user-item ~ .rating-by-user-item{
+	border-top: 1px solid #eee;
+}
+
+/*--------------Rating tag end-----------------*/

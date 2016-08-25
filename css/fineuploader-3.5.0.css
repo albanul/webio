@@ -1,0 +1,516 @@
+
+.primary-fineuploader,
+.dialog-fineuploader{
+	text-align: center;
+	position: relative;
+}
+
+.primary-fineuploader{
+	width: 160px;
+	height: 160px;
+}
+
+.dialog-fineuploader{
+	min-width: 300px;
+	margin: 0 auto;
+}
+
+.primary-fineuploader.primary-fineuploader_asbutton{
+	width: auto;
+	height: auto;
+	position: static;
+}
+
+
+.crop-container .coords{
+	margin-top: 10px;
+}
+
+.crop-container .jcrop-holder{
+	margin: 0 auto;
+}
+
+.primary-fineuploader .remove,
+.primary-fineuploader .crop{
+	position: absolute;
+	display: none;
+	cursor: pointer;
+	z-index: 100;
+}
+.primary-fineuploader .remove i,
+.primary-fineuploader .crop i{
+	font-size: 25px;
+}
+
+.primary-fineuploader .remove{
+	top:-8px;
+	right: -5px;
+}
+.primary-fineuploader .crop{
+	left: -7px;
+	bottom: -7px;
+}
+.thumb-img:hover .remove,
+.thumb-img:hover  .crop{
+	display: block;
+}
+
+.primary-fineuploader .crop:hover,
+.primary-fineuploader .remove:hover{
+	color: #d9534f;
+}
+
+
+.primary-fineuploader .thumb-img{
+	position: relative;
+	padding: 5px;
+	min-height: 100%;
+}
+.primary-fineuploader .thumb-img img{
+    max-width: 100%;
+}
+.primary-fineuploader .thumb-img:hover{
+    border-color: #428bca;
+}
+.primary-fineuploader .remove{
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.primary-fineuploader .qq-uploader
+{
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.editor-image .qq-uploader .qq-upload-button div{
+    font-family:FontAwesome;
+    font-weight:normal;
+    font-style:normal;
+    text-decoration:inherit;
+    -webkit-font-smoothing:antialiased;
+    line-height: 20px;
+    height: 20px;
+    vertical-align:baseline;
+    background-image:none;
+    background-position:0 0;
+    background-repeat:repeat;
+    margin-top:0;
+    color: #333333;
+    font-size: 14px;
+    width: 15px;
+}
+
+
+.editor-image .qq-uploader .qq-upload-button div:before{
+	content: "\f03e";
+}
+
+.primary-fineuploader .qq-upload-button,
+.dialog-fineuploader .qq-upload-button
+{
+    display: block;
+    text-align: center;
+    box-shadow: inset 1px 1px 3px #A7A7A7;
+    color: #333;
+    border-radius: 3px;
+	font-size: 12px;
+}
+
+.primary-fineuploader .qq-upload-button,
+.dialog-fineuploader .qq-upload-button
+{
+
+	height: 160px;
+	background: #f9f9f9;
+}
+
+.dialog-fineuploader .qq-upload-button{
+	height: 200px;
+}
+
+.primary-fineuploader  .qq-upload-button div
+{
+	height:160px;
+	width: 160px;
+	font-weight: bold;
+}
+
+.primary-fineuploader.primary-fineuploader_asbutton .qq-upload-button{
+	margin: 0 auto;
+	height: 30px;
+	padding: 6px 12px;
+	display: inline-block;
+	background-color: #5bc0de;
+	border-color: #46b8da;
+	box-shadow:none;
+	font-weight: normal;
+}
+
+.primary-fineuploader.primary-fineuploader_asbutton .qq-upload-button:hover{
+	background-color: #39b3d7;
+	border-color: #269abc;
+}
+
+.primary-fineuploader.primary-fineuploader_asbutton .qq-upload-button div{
+	height: auto;
+	width: auto;
+	color: #fff;
+}
+.primary-fineuploader.primary-fineuploader_asbutton .qq-upload-button div i{
+	font-size: 1em;
+	line-height: normal;
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+
+.dialog-fineuploader .qq-upload-button div,
+.dialog-fineuploader .qq-upload-button  input{
+	font-weight: bold;
+	height: 100%;
+}
+
+
+.primary-fineuploader  .qq-upload-button div i,
+.dialog-fineuploader .qq-upload-button div i{
+	font-size: 70px;
+	line-height: 110px;
+	display: block;
+}
+
+.dialog-fineuploader .qq-upload-button div i{
+	line-height: 140px;
+}
+
+.primary-fineuploader.min,
+.primary-fineuploader.min .qq-upload-button,
+.primary-fineuploader.min .qq-upload-button div{
+	width: 60px;
+	height: 60px;
+}
+
+.primary-fineuploader.min .progress{
+	height: 10px;
+}
+.primary-fineuploader.min .progress-bar{
+	height: 100%;
+}
+.primary-fineuploader.min .progress-bar .count{
+	display: none;
+}
+
+.primary-fineuploader.min .qq-upload-button div i{
+	line-height: 60px;
+	font-size: 30px;
+}
+
+
+.primary-fineuploader .qq-upload-button input{height: 100%;}
+
+.primary-fineuploader  .qq-upload-button-focus
+{
+    outline: 1px dotted #000000;
+}
+
+.primary-fineuploader  .qq-upload-drop-area,
+.primary-fineuploader  .qq-upload-extra-drop-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 30px;
+    z-index: 2;
+    background: #FF9797;
+    text-align: center;
+}
+
+.primary-fineuploader  .qq-upload-drop-area span{
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -8px;
+    font-size: 16px;
+}
+.primary-fineuploader  .qq-upload-extra-drop-area
+{
+    position: relative;
+    margin-top: 50px;
+    font-size: 16px;
+    padding-top: 30px;
+    height: 20px;
+    min-height: 40px;
+}
+.primary-fineuploader  .qq-upload-drop-area-active
+{
+    background: #FF7171;
+}
+.primary-fineuploader  .qq-upload-list
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+}
+.primary-fineuploader  .qq-upload-list li
+{
+    margin: 0;
+    padding: 2px;
+    line-height: 15px;
+    font-size: 16px;
+    background-color: #FFF0BD;
+}
+.primary-fineuploader  .qq-upload-file,
+.primary-fineuploader  .qq-upload-spinner,
+.primary-fineuploader  .qq-upload-size,
+.primary-fineuploader  .qq-upload-cancel,
+.primary-fineuploader  .qq-upload-retry,
+.primary-fineuploader  .qq-upload-failed-text,
+.primary-fineuploader  .qq-upload-finished,
+.primary-fineuploader  .qq-upload-delete{
+    margin-right: 12px;
+}
+
+.primary-fineuploader .qq-upload-file,
+.dialog-fineuploader .qq-upload-size,
+.primary-fineuploader .qq-upload-drop-area,
+.dialog-fineuploader .qq-upload-drop-area,
+.primary-fineuploader  .qq-drop-processing,
+.dialog-fineuploader .qq-drop-processing,
+.primary-fineuploader  .qq-upload-list,
+.dialog-fineuploader  .qq-upload-list,
+.primary-fineuploader  .qq-upload-finished,
+.dialog-fineuploader   .qq-upload-finished
+{
+	display: none !important;
+}
+
+.primary-fineuploader  .qq-upload-spinner
+{
+    display: inline-block;
+    background: url("../img/fineupload/loading.gif");
+    width: 15px;
+    height: 15px;
+    vertical-align: text-bottom;
+}
+
+.primary-fineuploader  .qq-drop-processing
+{
+    display: none;
+}
+
+.primary-fineuploader  .qq-drop-processing-spinner
+{
+    display: inline-block;
+    background: url("../img/fineupload/processing.gif");
+    width: 24px;
+    height: 24px;
+    vertical-align: text-bottom;
+}
+
+
+
+.primary-fineuploader  .qq-upload-retry,
+.primary-fineuploader  .qq-upload-delete,
+.primary-fineuploader  .ui-widget-content .qq-upload-retry ,
+.primary-fineuploader  .ui-widget-content .qq-upload-delete{
+    display: block;
+    color: #ff1a3a;
+    margin-bottom: 3px;
+}
+.primary-fineuploader  .qq-upload-cancel,
+.primary-fineuploader  .qq-upload-delete{
+    color: #ff1a3a;
+}
+
+.primary-fineuploader  .qq-upload-failed-text
+{
+    display: none;
+    font-style: italic;
+    font-weight: bold;
+}
+.primary-fineuploader  .qq-upload-failed-icon{
+    display:none;
+    width:15px;
+    height:15px;
+    vertical-align:text-bottom;
+}
+.primary-fineuploader  .qq-upload-fail .qq-upload-failed-text,
+.primary-fineuploader  .qq-upload-retryable .qq-upload-retry
+{
+    display: inline;
+}
+.primary-fineuploader  .qq-upload-retrying .qq-upload-failed-text{
+    display: inline;
+    color: #D60000;
+}
+.primary-fineuploader  .qq-upload-list li.qq-upload-success {
+    background-color: #B3DD33;
+    color: #000;
+    font-weight: bold;
+}
+.primary-fineuploader  .qq-upload-list li.qq-upload-fail
+{
+    background-color: #D60000;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.primary-fineuploader  .qq-upload-status-text{
+    display: block;
+}
+
+.primary-fineuploader .qq-uploader .progress,
+.dialog-fineuploader .qq-uploader .progress{
+	position: absolute;
+	width: 100%;
+	border-radius: 0;
+	bottom: 0;
+	margin:5px 0 0 0;
+}
+
+.primary-fineuploader .qq-uploader .progress .count,
+.dialog-fineuploader .qq-uploader .progress .count{
+	color: #547454;
+	font-weight: bold;
+	position: absolute;
+	right: 0;
+	left: 0;
+}
+
+
+.primary-fineuploader.primary-fineuploader_asbutton .qq-uploader{
+	position: static;
+	width:100%;
+}
+
+.primary-fineuploader.primary-fineuploader_asbutton .qq-uploader .progress{
+	position: static;
+}
+
+.primary-fineuploader  .progress-bar,
+.dialog-fineuploader .progress-bar{
+    height: 20px;
+    border-radius: 3px;
+    width: 0;
+}
+
+
+.qq-uploader .progress, .dialog-fineuploader .qq-uploader .progress + .qq-uploader .progress, .dialog-fineuploader .qq-uploader .progress {
+	margin-top: 5px;
+}
+
+
+
+
+
+/*----------Avatar offers------------*/
+
+.uploader-avatar-offers .option{
+	float: left;
+	padding: 0 5px 5px;
+	width: 20%;
+	cursor: pointer;
+	border-radius: 10px;
+	overflow: hidden;
+	opacity: 0.8;
+}
+.uploader-avatar-offers .option:hover{
+	opacity: 0.9;
+}
+.uploader-avatar-offers .option.selected{
+	opacity: 1;
+}
+.uploader-avatar-offers .option img{
+	max-width: 100%;
+	border: 3px solid transparent;
+	border-radius: 8px;
+}
+.uploader-avatar-offers {
+	background:#fff;
+	border:1px solid #ccc;
+}
+
+.uploader-avatar-offers .selected img {
+	border-color:#20b5fe;
+}
+
+.uploader-avatar-offers .headline,
+.dialog-fineuploader .headline{
+	margin: 10px 0;
+	font-size: 20px;
+	text-align: center;
+}
+
+/*----------Avatar offers end------------*/
+
+.primary-fineuploader .load-controls{
+	height: 100%;
+}
+.primary-fineuploader .load-controls .hover{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+}
+
+
+.primary-fineuploader .load-controls .hover i{
+	font-size: 60px;
+	line-height: 150px;
+}
+.primary-fineuploader .load-controls:hover .hover{
+	display: block;
+}
+
+
+/*-------Summernote file uploader-------------*/
+.pictureBtn .toolbarFile .qq-uploader .qq-drop-processing,
+.pictureBtn .toolbarFile .qq-uploader .qq-upload-list,
+.pictureBtn .toolbarFile .qq-uploader .progress
+{display: none;}
+
+
+.pictureBtn .toolbarFile .qq-uploader .qq-upload-button div{
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration:inherit;
+	line-height: 14px;
+	height: 14px;
+	vertical-align:baseline;
+	background: none;
+	margin-top:0;
+	width: 14px;
+}
+
+.pictureBtn .toolbarFile .qq-uploader .qq-upload-button{
+	padding: 7px 9px;
+	height: 27px;
+	background: none!important;
+}
+
+
+
+.pictureBtn{
+	padding: 0!important;
+}
+
+/*-------New-------------*/
+.primary-fineuploader .thumb-img img {
+	max-height: 160px;
+}

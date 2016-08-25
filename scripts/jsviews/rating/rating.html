@@ -1,0 +1,50 @@
+<div data-link="class{:'rating-category rating-' + ~tag.data.id + ' ' + ~tag.className + (~tag.readOnly?' readonly':'')} id{:~tag.id}"  class="rating-category rating-{{:~tag.data^id}} {{:~tag.className}}" id="{{:~tag.id}}">
+	{^{for ~tag ~ratingTag=~tag}}
+		{^{if showTooltip && ~site().user && (~site().user.role === 'admin' || (data && ~site().user.id === data.user))}}
+			{^{tooltip autoPosition=tooltipAutoPosition contextSelector=tooltipContextSelector position='top' beforeShow=data.ratingByUsers.lazyload.bind(data.ratingByUsers, 6).swapArguments(1) ^hidden=!data.ratingByUsers._^rows }}
+				<div class="stars">
+					{^{if icon}}
+						{^{for counts ^~r=rating}}
+							<i class="star-item fa fa-star-{{:(#data <= ~r?'':'-o')}}" data-link="class{:'star-item fa fa-star' + (#data <= ~r?'':'-o')}"></i>
+						{{/for}}
+					{{else}}
+						{^{for counts ^~r=rating}}
+							<div class="star-item star-{{:(#data <= ~r?'on':'off')}}" data-link="class{:'star-item star-'+(#data <= ~r?'on':'off')}"></div>
+						{{/for}}
+					{{/if}}
+				</div>
+				<span class="votes">
+					{^{:votes}}<i class="fa fa-users"></i>
+				</span>
+			{{else}}
+				{^{for data.ratingByUsers}}
+					<div class="rating-by-user-item">
+						{^{for user}}
+							<a class="avatar-bg link" href="/user/{{:semanticUrl || id}}" title="{{:fname + ' ' + lname }}" data-link="css-background-image{:~getBackground(avatar)}"></a>
+						{{/for}}
+						<span>
+							{^{for ~ratingTag.counts ^~r=rating}}
+								<div class="star-item star-{{:(#data <= ~r?'on':'off')}}" data-link="class{:'star-item star-'+(#data <= ~r?'on':'off')}"></div>
+							{{/for}}
+						</span>
+					</div>
+				{{/for}}
+			{{/tooltip}}
+		{{else}}
+			<div class="stars">
+				{^{if icon}}
+					{^{for counts ^~r=rating}}
+						<i class="star-item fa fa-star-{{:(#data <= ~r?'':'-o')}}"  data-link="class{:'star-item fa fa-star' + (#data <= ~r?'':'-o')}"></i>
+					{{/for}}
+				{{else}}
+					{^{for counts ^~r=rating}}
+						<div class="star-item star-off"  data-link="class{:'star-item star-'+(#data <= ~r?'on':'off')}"></div>
+					{{/for}}
+				{{/if}}
+			</div>
+			<span class="votes">
+				{^{:votes}}<i class="fa fa-users"></i>
+			</span>
+		{{/if}}
+	{{/for}}
+</div>
