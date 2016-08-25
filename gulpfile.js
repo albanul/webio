@@ -8,8 +8,8 @@ var gulp = require('gulp'),
 	plumber = require('gulp-plumber');
 
 gulp.task('mocha', function () {
-	gulp.src('scripts/tests/tests.js', {read: false})
-		.pipe(mocha(/*{reporter: 'mocha-teamcity-reporter'}*/));
+	gulp.src('scripts/tests/tests.js')
+		.pipe(mocha());
 });
 
 gulp.task('webio', function() {

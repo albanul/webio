@@ -9,6 +9,7 @@ var chai = require('chai'),
 
 describe('rating', function () {
 
+	// var host = 'http://localhost';
 	var htmlPath = process.cwd() + '/scripts/jsviews/rating/tests/test.html';
 
 	browser.url(htmlPath);

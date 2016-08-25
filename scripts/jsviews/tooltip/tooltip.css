@@ -1,0 +1,92 @@
+.tooltip-tag-container{
+	position: relative;
+}
+.tooltip-tag-container .tooltip-tag-tooltip{
+	position: absolute;
+	z-index: 1000;
+}
+
+.tooltip-tag-container .tooltip-tag-tooltip > .tooltip-tag-tooltip-content{
+	position: relative;
+}
+
+.tooltip-tag-container .tooltip-tag-tooltip.position_left{
+	right: 100%;
+	top: 0;
+}
+.tooltip-tag-container .tooltip-tag-tooltip.position_left > .tooltip-tag-tooltip-content{
+	margin-right: 5px;
+}
+
+.tooltip-tag-container .tooltip-tag-tooltip.position_left_top{
+	right: 0;
+	bottom: 100%;
+}
+
+.tooltip-tag-container .tooltip-tag-tooltip.position_left_top>.tooltip-tag-tooltip-content{
+	margin-bottom: 5px;
+}
+
+.tooltip-tag-container .tooltip-tag-tooltip.position_left_bottom{
+	right: 0;
+	top: 100%;
+}
+
+.tooltip-tag-container .tooltip-tag-tooltip.position_left_bottom>.tooltip-tag-tooltip-content{
+	margin-top: 5px;
+}
+
+.tooltip-tag-container .tooltip-tag-tooltip.position_right{
+	left: 100%;
+	top: 0;
+}
+.tooltip-tag-container .tooltip-tag-tooltip.position_right > .tooltip-tag-tooltip-content{
+	margin-left: 5px;
+}
+
+.tooltip-tag-container .tooltip-tag-tooltip.position_right_top{
+	left: 0;
+	bottom: 100%;
+}
+
+.tooltip-tag-container .tooltip-tag-tooltip.position_right_top>.tooltip-tag-tooltip-content{
+	margin-bottom: 5px;
+}
+
+.tooltip-tag-container .tooltip-tag-tooltip.position_right_bottom{
+	left: 0;
+	top: 100%;
+}
+
+.tooltip-tag-container .tooltip-tag-tooltip.position_right_bottom>.tooltip-tag-tooltip-content{
+	margin-top: 5px;
+}
+
+
+.tooltip-tag-container .tooltip-tag-tooltip.position_top > .tooltip-tag-tooltip-content{
+	margin-bottom: 5px;
+}
+
+.tooltip-tag-container .tooltip-tag-tooltip.position_bottom > .tooltip-tag-tooltip-content{
+	margin-top: 5px;
+}
+
+.tooltip-tag-container .tooltip-tag-tooltip.position_bottom,
+.tooltip-tag-container .tooltip-tag-tooltip.position_top{
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.tooltip-tag-container .tooltip-tag-tooltip.position_bottom{
+	top: 100%;
+}
+
+.tooltip-tag-container .tooltip-tag-tooltip.position_top{
+	bottom: 100%;
+}
+
+

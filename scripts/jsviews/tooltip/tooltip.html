@@ -1,0 +1,12 @@
+<div class="tooltip-tag-container" {{:~tag.id ? 'id="' + ~tag.id + '"' : ''}}>
+	<div class="tooltip-caption">
+		{^{for ^tmpl=~tag.tagCtxs[0].content/}}
+	</div>
+	{^{if ~tag^enableTooltip && !~tag.disabled}}
+		<div data-link="class{:'tooltip-tag-tooltip position_' + ~tag.position + ' ' + ~tag.className + (~tag.calculation?' calculation':'')}">
+			<div class="tooltip-tag-tooltip-content">
+				{^{for ~tag.data ^tmpl=~tag.tagCtxs[1].content/}}
+			</div>
+		</div>
+	{{/if}}
+</div>

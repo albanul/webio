@@ -1,0 +1,66 @@
+{
+	"baseUrl": "../../../../",
+	"paths": {
+		"async": "scripts/libs/async.min",
+		"text": "scripts/libs/text",
+		"json": "scripts/libs/json",
+		"css": "scripts/libs/css/css",
+		"jquery": [
+			"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min",
+			"scripts/libs/jquery-1.12.4.min"
+		],
+		"jsviews": [
+			"https://cdnjs.cloudflare.com/ajax/libs/jsviews/0.9.79/jsviews.min",
+			"scripts/jsviews/jsviews.min"
+		],
+		"es5-shim": "scripts/libs/es5-shim.min",
+		"es5-sham": "scripts/libs/es5-sham.min",
+		"bootstrap": [
+			"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min",
+			"scripts/libs/bootstrap.min"
+		],
+		"bootstrapCss": [
+			"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min",
+			"css/bootstrap.min"
+		],
+		"fontAwesome": [
+			"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min",
+			"css/font-awesome.min"
+		],
+		"factory": "scripts/core/factory",
+		"utils": "scripts/core/utils",
+		"url": "scripts/core/url",
+		"om": "scripts/core/om",
+		"language": "scripts/core/language",
+		"cookie": "scripts/libs/js.cookie",
+		"rating": "scripts/jsviews/rating/rating",
+		"tooltip": "scripts/jsviews/tooltip/tooltip",
+		"rate": "scripts/objects/rate"
+	},
+	"shim": {
+		"es5-shim": {
+			"exports": "es5-shim"
+		},
+		"es5-sham": {
+			"deps": [ "es5-shim" ],
+			"exports": "es5-sham"
+		},
+		"cookie": {
+			"deps": [ "jquery" ],
+			"exports": "cookie"
+		},
+		"language": {
+			"deps": [
+				"jquery"
+			],
+			"exports": "language"
+		},
+		"bootstrap": {
+			"deps": [
+				"jquery",
+				"css!bootstrapCss"
+			],
+			"exports": "bootstrap"
+		}
+	}
+}
